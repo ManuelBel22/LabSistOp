@@ -1,0 +1,87 @@
+=== /etc ===
+/etc guarda archivos de configuracion del sistema en texto plano.
+total 711
+-rw-r--r--  1 root   root     3981 may  6  2025 adduser.conf
+-rw-r--r--  1 root   root       44 jul 15 11:16 adjtime
+drwxr-xr-x  3 root   root       29 jul 15 11:12 alsa
+drwxr-xr-x  2 root   root     4946 sep 13 16:58 alternatives
+-rw-r--r--  1 root   root      460 jun  2  2025 anacrontab
+-rw-r--r--  1 root   root    11634 ago  6  2022 analog.cfg
+drwxr-xr-x  8 root   root      221 nov 16 15:59 apache2
+drwxr-xr-x  2 root   root       34 jul 15 10:49 apparmor
+drwxr-xr-x  8 root   root     2137 nov 16 15:59 apparmor.d
+drwxr-xr-x  9 root   root      223 jul 15 11:48 apt
+drwxr-xr-x  3 root   root       69 jul 15 11:14 avahi
+-rw-r--r--  1 root   root     1997 may  9  2026 bash.bashrc
+-rw-r--r--  1 root   root       45 ene 12  2025 bash_completion
+drwxr-xr-x  2 root   root       72 sep  4 17:27 bash_completion.d
+-rw-r--r--  1 root   root      367 abr 27  2026 bindresvport.blacklist
+drwxr-xr-x  2 root   root        3 abr 13  2026 binfmt.d
+drwxr-xr-x  3 root   root       31 jul 15 11:12 ca-certificates
+-rw-r--r--  1 root   root     6424 oct 21 09:56 ca-certificates.conf
+-rw-r--r--  1 root   root     6422 jul 15 11:13 ca-certificates.conf.dpkg-old
+--------------------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros, colas y caches.
+total 0
+drwxr-xr-x 2 root root   3 nov 17 09:08 backups
+drwxr-xr-x 1 root root 100 jul 15 11:18 cache
+drwxr-xr-x 1 root root 220 nov 16 15:59 lib
+drwxr-xr-x 2 root root   3 jul  4 05:05 local
+lrwxrwxrwx 1 root root   9 jul 15 10:48 lock -> /run/lock
+drwxr-xr-x 1 root root 160 nov 20 10:32 log
+drwxrwsr-x 2 root mail   3 jul 15 10:48 mail
+drwxr-xr-x 2 root root   3 jul 15 10:48 opt
+lrwxrwxrwx 1 root root   4 jul 15 10:48 run -> /run
+drwxr-xr-x 1 root root  60 jul 15 11:12 spool
+drwxrwxrwt 1 root root 120 nov 20 10:33 tmp
+drwxr-xr-x 3 root root  27 jul 15 11:11 www
+--------------------------------------------------
+
+=== /home ===
+/home contiene un subdirectorio por usuario con sus archivos personales.
+total 4
+drwx------ 1 u14240638 u14240638 4096 nov 20 10:32 u14240638
+--------------------------------------------------
+
+=== /bin ===
+/bin contiene programas esenciales disponibles para todo usuario.
+lrwxrwxrwx 1 root root 7 jul 15 10:48 /bin -> usr/bin
+--------------------------------------------------
+
+=== /tmp ===
+/tmp contiene archivos temporales que se vacian al reiniciar.
+total 0
+drwx------ 2 u14240638 u14240638 60 nov 20 10:32 ssh-rtAsrHRcqsN2
+drwx------ 3 root      root      60 nov 20 10:32 systemd-private-d4ae83f837f643c79e2208efaf13b244-colord.service-j86MsV
+drwx------ 3 root      root      60 nov 20 10:31 systemd-private-d4ae83f837f643c79e2208efaf13b244-polkit.service-jLbLeW
+drwx------ 3 root      root      60 nov 20 10:31 systemd-private-d4ae83f837f643c79e2208efaf13b244-systemd-logind.service-aGNqqx
+drwx------ 3 root      root      60 nov 20 10:32 systemd-private-d4ae83f837f643c79e2208efaf13b244-upower.service-lyxcsE
+--------------------------------------------------
+
+=== /proc === 
+/proc es un sistema virtual: el kernel genera su contenido al leerlo.
+total 0
+dr-xr-xr-x  9 root             root                           0 nov 20 10:31 1
+dr-xr-xr-x  9 root             root                           0 nov 20 10:31 1006
+dr-xr-xr-x  9 root             root                           0 nov 20 10:31 1048
+dr-xr-xr-x  9 root             root                           0 nov 20 10:31 1050
+dr-xr-xr-x  9 root             root                           0 nov 20 10:31 11
+dr-xr-xr-x  9 root             root                           0 nov 20 11:02 1118
+dr-xr-xr-x  9 rtkit            rtkit                          0 nov 20 10:31 1150
+dr-xr-xr-x  9 root             root                           0 nov 20 10:32 1186
+dr-xr-xr-x  9 root             root                           0 nov 20 10:31 12
+dr-xr-xr-x  9 root             root                           0 nov 20 11:02 1215
+dr-xr-xr-x  9 root             root                           0 nov 20 11:02 1218
+dr-xr-xr-x  9 u14240638        u14240638                      0 nov 20 10:32 1239
+dr-xr-xr-x  9 u14240638        u14240638                      0 nov 20 10:32 1241
+dr-xr-xr-x  9 u14240638        u14240638                      0 nov 20 10:32 1261
+dr-xr-xr-x  9 u14240638        u14240638                      0 nov 20 10:32 1280
+dr-xr-xr-x  9 u14240638        u14240638                      0 nov 20 10:32 1293
+dr-xr-xr-x  9 root             root                           0 nov 20 10:31 13
+dr-xr-xr-x  9 u14240638        u14240638                      0 nov 20 11:02 1336
+dr-xr-xr-x  9 u14240638        u14240638                      0 nov 20 10:32 1365
+--------------------------------------------------
+
+Exploracion completada.

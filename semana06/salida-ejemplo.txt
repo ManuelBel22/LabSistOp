@@ -1,0 +1,26 @@
+=== Sistema ===
+Linux ltsp39 6.12.117+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.117-1 (2026-11-12) x86_64 GNU/Linux
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+up 3 hours, 8 minutes
+               total       usado       libre  compartido   búf/caché  disponible
+Mem:           3,8Gi       1,7Gi       316Mi       103Mi       1,6Gi       2,1Gi
+=== Usuario ===
+u14240638
+uid=1029(u14240638) gid=1029(u14240638) grupos=1029(u14240638)
+u14240638
+=== Disco ===
+S.ficheros          Tamaño Usados  Disp Uso% Montado en
+udev                  1,9G      0  1,9G   0% /dev
+tmpfs                 389M   1,9M  387M   1% /run
+/run/initramfs/ltsp   1,9G    12M  1,9G   1% /
+tmpfs                 1,9G      0  1,9G   0% /dev/shm
+tmpfs                 5,0M   8,0K  5,0M   1% /run/lock
+tmpfs                 1,0M      0  1,0M   0% /run/credentials/systemd-journald.service
+tmpfs                 1,9G   8,0K  1,9G   1% /tmp
+tmpfs                 1,0M      0  1,0M   0% /run/credentials/getty@tty1.service
+u14240638@server:     110G    65G   40G  63% /home/u14240638
+12K	.

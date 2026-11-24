@@ -18,7 +18,7 @@ uso() {
 
 RUTA="$1"
 
-# -L va primero : un enlace roto no cumple -e y quedaria como "no existe "
+# -L va primero : un enlace roto no cumple -e y quedaria como "no existe
 if [[ -L "$RUTA" ]]; then
   echo "Es enlace simbolico: $RUTA"
   ls -l "$RUTA"
@@ -39,7 +39,7 @@ fi
 if [[ -f "$RUTA" ]]; then
   echo "Es archivo regular: $RUTA"
   if [[ ! -r "$RUTA" ]]; then
-    echo "Sin permiso de lectura: $RUTA " >&2
+    echo "Sin permiso de lectura: $RUTA" >&2
     exit 3
   fi
   ls -l "$RUTA"

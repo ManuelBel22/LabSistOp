@@ -1,0 +1,129 @@
+Exploracion del sistema - PowerShell
+
+=== /etc ===
+/etc guarda la configuracion del sistema en texto plano.
+
+Name              Length LastWriteTime
+----              ------ -------------
+alsa                     15/7/2026 11:12:53 a. m.
+alternatives             13/9/2026 4:58:49 p. m.
+apache2                  16/11/2026 3:59:56 p. m.
+apparmor                 15/7/2026 10:49:32 a. m.
+apparmor.d               16/11/2026 3:59:55 p. m.
+apt                      15/7/2026 11:48:59 a. m.
+avahi                    15/7/2026 11:14:40 a. m.
+bash_completion.d        4/9/2026 5:27:33 p. m.
+binfmt.d                 13/4/2026 3:38:05 p. m.
+ca-certificates          15/7/2026 11:12:03 a. m.
+
+
+--------------------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros, colas y caches.
+
+Name    Length LastWriteTime
+----    ------ -------------
+backups        17/11/2026 9:08:57 a. m.
+cache          15/7/2026 11:18:46 a. m.
+lib            16/11/2026 3:59:21 p. m.
+local          4/7/2026 5:05:00 a. m.
+lock           15/7/2026 10:48:40 a. m.
+log            25/11/2026 10:08:25 a. m.
+mail           15/7/2026 10:48:40 a. m.
+opt            15/7/2026 10:48:40 a. m.
+run            15/7/2026 10:48:40 a. m.
+spool          15/7/2026 11:12:07 a. m.
+
+
+--------------------------------------------------
+
+=== /home ===
+/home contiene un subdirectorio por usuario.
+
+Name      Length LastWriteTime
+----      ------ -------------
+lab18            25/11/2026 9:30:28 a. m.
+u14240638        25/11/2026 10:52:39 a. m.
+
+
+--------------------------------------------------
+
+=== /bin ===
+/bin contiene los programas esenciales del sistema.
+
+Name            Length LastWriteTime
+----            ------ -------------
+X11                    7/11/2025 3:43:44 p. m.
+[               55720  4/6/2025 11:14:05 a. m.
+7z              38     10/4/2026 9:08:58 a. m.
+7za             39     10/4/2026 9:08:58 a. m.
+7zr             39     10/4/2026 9:08:58 a. m.
+aa-enabled      18672  10/4/2025 11:06:25 a. m.
+aa-exec         18672  10/4/2025 11:06:25 a. m.
+aa-features-abi 18664  10/4/2025 11:06:25 a. m.
+ab              59824  11/11/2026 8:54:19 a. m.
+aclocal         25     22/3/2025 1:36:01 p. m.
+
+
+--------------------------------------------------
+
+=== /tmp ===
+/tmp contiene archivos temporales que se borran al reiniciar.
+
+Name                                                                           L
+                                                                               e
+                                                                               n
+                                                                               g
+                                                                               t
+                                                                               h
+----                                                                           -
+ssh-qTyEyvYlMLHM                                                                
+systemd-private-1109f849da064f7cb75aec66e6ecd3ed-colord.service-PiKjlC          
+systemd-private-1109f849da064f7cb75aec66e6ecd3ed-polkit.service-kBmQhj          
+systemd-private-1109f849da064f7cb75aec66e6ecd3ed-systemd-logind.service-XhMfae  
+systemd-private-1109f849da064f7cb75aec66e6ecd3ed-upower.service-8YOEQL          
+AC_drop.{12d34_56n78_90s12_34m56}.png                                          1
+AC_item.{12d34_56n78_90s12_34m56}.png                                          9
+Air Cooler_drop.{12d34_56n78_90s12_34m56}.png                                  3
+Air Cooler_item.{12d34_56n78_90s12_34m56}.png                                  1
+Alarm_drop.{12d34_56n78_90s12_34m56}.png                                       6
+
+
+--------------------------------------------------
+
+=== /proc ===
+/proc es virtual: el kernel genera su contenido al leerlo.
+
+Name Length LastWriteTime
+---- ------ -------------
+1           25/11/2026 9:17:59 a. m.
+1032        25/11/2026 9:21:33 a. m.
+11          25/11/2026 9:18:36 a. m.
+1121        25/11/2026 10:07:56 a. m.
+1153        25/11/2026 9:22:26 a. m.
+13          25/11/2026 9:18:36 a. m.
+14          25/11/2026 9:18:36 a. m.
+1458        25/11/2026 9:30:35 a. m.
+1496        25/11/2026 9:30:36 a. m.
+15          25/11/2026 9:18:36 a. m.
+
+
+--------------------------------------------------
+
+=== Descubrimiento ===
+Cmdlets con el sustantivo Item:
+Sintesis de la ayuda de Get-ChildItem:
+
+Name     : Get-ChildItem
+Synopsis : 
+           Get-ChildItem [[-Path] <string[]>] [[-Filter] <string>] [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+           Get-ChildItem [[-Filter] <string>] -LiteralPath <string[]> [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+
+
+Cantidad de elementos en /etc:
+225
+
+Exploracion completada.

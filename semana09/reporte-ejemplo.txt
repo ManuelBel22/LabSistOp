@@ -1,0 +1,43 @@
+=== Monitor de procesos ===
+Usuario: u14240638
+Fecha: mié 25 nov 2026 10:43:06 -04
+ 
+=== Procesos del usuario ordenados por %CPU ===
+    PID STAT %CPU %MEM COMMAND
+   2993 Sl    6.5 16.3 x-www-browser
+   3217 Sl    4.5 14.2 Isolated Web Co
+   3458 Sl    0.8  5.0 file:// Content
+   2983 Sl    0.5  1.2 xfce4-terminal
+   2788 Sl    0.3  2.3 xfwm4
+   2813 Sl    0.3  1.0 xfce4-panel
+   2818 Sl    0.2  1.1 Thunar
+   3080 Sl    0.2  4.0 Privileged Cont
+   2824 Sl    0.0  1.5 xfdesktop
+   3134 Sl    0.0  2.8 WebExtensions
+   2714 Ssl   0.0  0.6 xfce4-session
+   2802 Sl    0.0  0.6 xfsettingsd
+   2837 S     0.0  1.0 applet.py
+   2658 Ss    0.0  0.3 systemd
+   3293 Sl    0.0  1.8 Web Content
+   2932 Sl    0.0  0.6 wrapper-2.0
+   2700 Ss    0.0  0.1 dbus-daemon
+   2830 Sl    0.0  0.8 nm-applet
+   3014 Ss    0.0  0.1 bash
+
+=== Proceso de mayor consumo ===
+   2993 x-www-browser    6.5
+
+=== Conteo por estado ===
+      1 R
+     51 S
+
+=== Proceso de prueba ===
+Proceso de prueba lanzado con PID=3904
+    PID STAT CMD
+   3904 S+   sleep 60
+[1]+  3904 Ejecutando              sleep 60 &
+
+=== Terminacion en dos etapas ===
+Termino correctamente con SIGTERM
+
+Monitoreo completado.

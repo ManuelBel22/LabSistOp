@@ -25,6 +25,3 @@ pwsh ./consultas.ps1 -Csv otro-archivo.csv
 
 ## Que quedo pendiente
 Extension opcional: exportar el resumen por categoria a un CSV nuevo con `Export-Csv`.
-```[cite: 2]
-
-¿Ya lograste generar `salida-consultas.txt` y verificar que imprime `7` con `grep -c "==" salida-consultas.txt`?

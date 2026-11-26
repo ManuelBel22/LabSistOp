@@ -32,3 +32,24 @@ New-Item -ItemType Directory -Path $Mezcla | Out-Null
 }
 
 Write-Output "Archivos generados: $((Get-ChildItem $Mezcla).Count)"
+
+# Carpetas de destino, una por categoria
+New-Item -ItemType Directory -Force -Path `
+    "$Dest/scripts", "$Dest/documentos", "$Dest/imagenes", `
+    "$Dest/registros", "$Dest/otros" | Out-Null
+
+Get-ChildItem $Mezcla -File | Group-Object Extension | ForEach-Object {
+    $ext = $_.Name
+    $destino = switch ($ext) {
+        ".sh"   { "$Dest/scripts" }
+        ".txt"  { "$Dest/documentos" }
+        ".md"   { "$Dest/documentos" }
+        ".jpg"  { "$Dest/imagenes" }
+        ".png"  { "$Dest/imagenes" }
+        ".log"  { "$Dest/registros" }
+        default { "$Dest/otros" }
+    }
+    if ($PSCmdlet.ShouldProcess("$($_.Count) archivo(s) $ext", "Mover a $destino")) {
+        $_.Group | Move-Item -Destination $destino
+    }
+}
